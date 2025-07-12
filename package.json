@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && tsc --noEmit",
-    "start": "bun run .output/server/index.mjs"
+    "start": "bun run --conditions='worker' .output/server/index.mjs"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.22.0",
